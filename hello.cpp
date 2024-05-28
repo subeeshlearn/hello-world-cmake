@@ -34,7 +34,7 @@ const char * HELLO = "Hello";
 #include <string.h>
 #include <stdlib.h>
 
-char *say_hello(const char *name) {
+char *hello(const char *name) {
     if (name != NULL && strlen(name) > 0) {
         char *hello = (char *) malloc(strlen(HELLO) + strlen(name) + 1);
         strcpy(hello, HELLO);
