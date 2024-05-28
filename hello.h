@@ -1,6 +1,6 @@
-/* hello.c
+/* hello.h
 
-   Copyright (C) 2015-2024 Mariano Ruiz <mrsarm@gmail.com>
+   Copyright (C) 2015-2022 Mariano Ruiz <mrsarm@gmail.com>
    This file is part of the helloworld C-project.
 
    The "helloworld C-project" is free software; you can redistribute it and/or
@@ -18,12 +18,8 @@
    <http://www.gnu.org/licenses/>.  */
 
 
-#include <stddef.h>
-#include <string.h>
-#include <stdlib.h>
-#include "hello.h"
-
-const char * HELLO = "Hello";
+#ifndef _HELLOWORLD_SAY_HELLO_H_
+#define _HELLOWORLD_SAY_HELLO_H_
 
 /**
  * Return a greeting message "Hello <name>" if name is not empty or null,
@@ -31,16 +27,6 @@ const char * HELLO = "Hello";
  * @param name string with the name
  * @return a string with the greeting message
  */
-#include <string.h>
-#include <stdlib.h>
+char* say_hello(const char *);
 
-char *say_hello(const char *name) {
-    if (name != NULL && strlen(name) > 0) {
-        char *hello = (char *) malloc(strlen(HELLO) + strlen(name) + 1);
-        strcpy(hello, HELLO);
-        strcat(hello, " ");
-        strcat(hello, name);
-        return hello;
-    }
-    return strcpy((char *) malloc(strlen(HELLO) + 1), HELLO);
-}
+#endif //_HELLOWORLD_SAY_HELLO_H_
