@@ -24,15 +24,6 @@
 
 const char *HELLO = "Hello";
 
-/**
- * Return a greeting message "Hello <name>" if name is not empty or null,
- * otherwise just "Hello".
- * @param name string with the name
- * @return a string with the greeting message
- */
-#include <string.h>
-#include <stdlib.h>
-
 char *hello(const char *name) {
     if (name != NULL && strlen(name) > 0) {
         char *hello = (char *) malloc(strlen(HELLO) + strlen(name) + 1);
