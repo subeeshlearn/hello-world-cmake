@@ -22,6 +22,8 @@
 #include <string.h>
 #include <stdlib.h>
 
+#include <stdio.h>
+
 const char *HELLO = "Hello";
 
 char *hello(const char *name) {
