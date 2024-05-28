@@ -36,3 +36,10 @@ char *hello(const char *name) {
     }
     return strcpy((char *) malloc(strlen(HELLO) + 1), HELLO);
 }
+
+int main() {
+    char* result = hello("World");
+    printf("%s\n", result);
+    free(result);
+    return 0;
+}
