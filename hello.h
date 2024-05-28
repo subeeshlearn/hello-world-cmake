@@ -21,12 +21,15 @@
 #ifndef _HELLOWORLD_SAY_HELLO_H_
 #define _HELLOWORLD_SAY_HELLO_H_
 
+#include <stdio.h> // Include the necessary library for printf function
+#include <stdlib.h> // Include the necessary library for malloc function
+
 /**
  * Return a greeting message "Hello <name>" if name is not empty or null,
  * otherwise just "Hello".
  * @param name string with the name
  * @return a string with the greeting message
  */
-char* say_hello(const char *);
+char* hello(const char *);
 
 #endif //_HELLOWORLD_SAY_HELLO_H_

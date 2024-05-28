@@ -21,9 +21,8 @@
 #include <stddef.h>
 #include <string.h>
 #include <stdlib.h>
-#include "hello.h"
 
-const char * HELLO = "Hello";
+const char *HELLO = "Hello";
 
 /**
  * Return a greeting message "Hello <name>" if name is not empty or null,
